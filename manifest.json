@@ -1,0 +1,41 @@
+{
+	"name": "Goodman",
+	"version": "0.0.0",
+	"author": "Nick Nisi",
+	"description": "A Chrome extension to remind you of how cool John Goodman is",
+
+	"manifest_version": 2,
+
+	"devtools_page": "devtools.html",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["js/contentscript.js"]
+		},
+		{
+			"matches": ["http://nebraskajs.com/*"],
+			"js": ["js/nejs-contentscript.js"],
+			"run_at": "document_end"
+		}
+	],
+
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"19": "img/goodman16.png",
+			"38": "img/goodman32.png"
+		},
+		"default_title": "John Goodman",
+		"default_popup": "popup.html"
+	},
+
+	"web_accessible_resources": [
+		"img/goodman-lebowski.jpg"
+	],
+
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

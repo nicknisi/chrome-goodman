@@ -1,0 +1,21 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 2em;
+	background-color: #56A9F6;
+	font-family: futura, helvetica, sans-serif;
+}
+
+h1 {
+	font-variant: small-caps;
+	color: #fff;
+}
+
+.goodman {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	background-image: url(../img/john-goodman.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
