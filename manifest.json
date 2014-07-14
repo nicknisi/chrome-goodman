@@ -19,6 +19,12 @@
 		}
 	],
 
+	"icons": {
+		"16": "img/goodman16.png",
+		"48": "img/goodman48.png",
+		"128": "img/goodman128.png"
+	},
+
 	"background": {
 		"scripts": ["js/background.js"],
 		"persistent": false
@@ -26,8 +32,8 @@
 
 	"browser_action": {
 		"default_icon": {
-			"19": "img/goodman16.png",
-			"38": "img/goodman32.png"
+			"19": "img/goodman19.png",
+			"38": "img/goodman38.png"
 		},
 		"default_title": "John Goodman",
 		"default_popup": "popup.html"
